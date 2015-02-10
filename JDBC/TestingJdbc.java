@@ -1,11 +1,17 @@
-package JDBC;
-import java.sql.*;
-public class Test1 {
+/*
+ Java Program에서 oracle을 사용하는 가장 기본적인 예제입니다.
+
+*/
+import java.sql.Connection;
+import java.sql.Statement;
+import java.sql.ResultSet;
+public class TestingJdbc {
  private static Connection con;
  private static Statement stmt;
  private static ResultSet rs;
  
  public static void main(String[] ar){
+
   try{
    // 1. Driver를 로딩한다.
    Class.forName("oracle.jdbc.driver.OracleDriver");
